@@ -3,8 +3,8 @@ module MLJCatBoostInterface
 
 using ..CatBoost: catboost, numpy, to_pandas, feature_importance, predict, predict_proba,
                   Pool
-using PythonCall
-using Tables
+using PythonCall: PythonCall, Py, pyconvert
+using Tables: Tables
 
 using MLJModelInterface: MLJModelInterface
 const MMI = MLJModelInterface
